@@ -12,24 +12,27 @@ Xide is a command line tool (Hopefully when it is complete enough it will be on 
 Commands
 --------
 
-      xide start /home/my_user/my_proj/ 9090
-      
 The "xide start [root_dir] [port]" command starts a new editor. It requires two arguments: root directory and port to host the editor at. 
+
+      xide start /home/my_user/my_proj/ 9090
+
+The "xide list" command lists all the editors which are currently running, as well as their root directories and ports they are running on.
       
       xide list 
-      
-The "xide list" command lists all the editors which are currently running, as well as their root directories and ports they are running on.
+
+The "xide stop [port]" command will stop/remove the editor currently running on the specified port, which is it's only argument.
       
       xide stop 9090
       
-The "xide stop [port]" command will stop/remove the editor currently running on the specified port, which is it's only argument.
-
+      
 
 License
 -------
 
 MIT license. If you are not familiar with MIT style licenses please refer to the "LICENSE" file.
 (c) Timothy Cubbedge (github.com/timcubb) 
+
 www.TimothyCubbedge.com
+
 www.zenoku.com
 
